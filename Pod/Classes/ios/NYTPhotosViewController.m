@@ -181,6 +181,12 @@ static const UIEdgeInsets NYTPhotosViewControllerCloseButtinImageInsets = {3, 0,
     [self setupPageViewControllerWithInitialPhoto:initialPhoto];
 }
 
+
+-(void)addMorePhotosToDataSource:(NSArray*)photos {
+    [self.dataSource addMorePhotos:photos];
+    [self updateOverlayInformation];
+}
+
 - (void)setupPageViewControllerWithInitialPhoto:(id <NYTPhoto>)initialPhoto {
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:@{UIPageViewControllerOptionInterPageSpacingKey: @(NYTPhotosViewControllerInterPhotoSpacing)}];
     

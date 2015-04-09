@@ -106,6 +106,13 @@ extern NSString * const NYTPhotosViewControllerDidDismissNotification;
  */
 - (void)updateImageForPhoto:(id <NYTPhoto> _Nullable)photo;
 
+/**
+ *  Add more photos to the existing photos array.
+ *
+ *  @param photos An array of objects conforming to the `NYTPhoto` protocol.
+ */
+-(void)addMorePhotosToDataSource:(NSArray*)photos;
+
 @end
 
 /**
