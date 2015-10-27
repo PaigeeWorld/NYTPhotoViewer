@@ -113,6 +113,13 @@ extern NSString * const NYTPhotosViewControllerDidDismissNotification;
  */
 -(void)addMorePhotosToDataSource:(NSArray*)photos;
 
+/*
+Update the overlay for the current Image.
+farhan addition
+*/
+
+-(void)updateOverlayInformation; 
+
 @end
 
 /**
