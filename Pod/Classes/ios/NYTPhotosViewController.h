@@ -120,6 +120,9 @@ farhan addition
 
 -(void)updateOverlayInformation; 
 
+@property (nonatomic) UIView *referenceViewForCurrentPhoto;
+
+
 @end
 
 /**
