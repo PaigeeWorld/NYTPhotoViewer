@@ -72,6 +72,13 @@ extern NSString * const NYTPhotosViewControllerDidDismissNotification;
  */
 @property (nonatomic, weak, nullable) id <NYTPhotosViewControllerDelegate> delegate;
 
+
+/**
+ *  Change the tint color of the overlay buttons.
+ */
+@property (nonatomic, nullable) UIColor *barTintColor;
+
+
 /**
  *  A convenience initializer that calls `initWithPhotos:initialPhoto:`, passing the first photo as the `initialPhoto` argument.
  *

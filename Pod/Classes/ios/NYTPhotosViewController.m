@@ -291,6 +291,14 @@ static const UIEdgeInsets NYTPhotosViewControllerCloseButtinImageInsets = {3, 0,
     }
 }
 
+- (void)setBarTintColor:(UIColor *)barTintColor {
+    self.overlayView.navigationBar.tintColor = barTintColor;
+}
+
+- (UIColor *)barTintColor {
+    return self.overlayView.tintColor;
+}
+
 - (UIBarButtonItem *)leftBarButtonItem {
     return self.overlayView.leftBarButtonItem;
 }
