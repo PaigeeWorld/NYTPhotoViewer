@@ -45,7 +45,6 @@ static const UIEdgeInsets NYTPhotosViewControllerCloseButtinImageInsets = {3, 0,
 @property (nonatomic) BOOL overlayWasHiddenBeforeTransition;
 
 @property (nonatomic, readonly) NYTPhotoViewController *currentPhotoViewController;
-@property (nonatomic, readonly) UIView *referenceViewForCurrentPhoto;
 @property (nonatomic, readonly) CGPoint boundsCenterPoint;
 
 @end
